@@ -1,0 +1,30 @@
+@media (min-width: 900px){
+    html{
+        font-size: 20px;
+    }
+
+    nav{
+        display: block;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .about{
+        .section-wrapper{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        &__avatar{
+            justify-self: end;
+        }
+    }
+
+    .services{
+        &__skills{
+            justify-content: space-between;
+        }
+    }
+}

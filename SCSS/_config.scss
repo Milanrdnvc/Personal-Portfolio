@@ -1,0 +1,25 @@
+@font-face{
+    src: url(../Font/Nunito-Black.ttf) format('truetype');
+    font-family: font-xbold;
+}
+
+@font-face{
+    src: url(../Font/Nunito-Bold.ttf) format('truetype');
+    font-family: font-bold;
+}
+
+@font-face{
+    src: url(../Font/Nunito-Regular.ttf) format('truetype');
+    font-family: font-semibold;
+}
+
+:root{
+    --font-xsmall: 1rem;
+    --font-small: 1.2rem;
+    --font-medium: 1.5rem;
+    --font-large: 1.8rem;
+    --font-xbold: font-xbold;
+    --font-bold: font-bold, sans-serif;
+    --font-semibold: font-semibold, sans-serif;
+    --color-theme: #00B1B1;
+}
