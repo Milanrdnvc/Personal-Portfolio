@@ -196,8 +196,7 @@ nav{
     }
 
     &__grid-item{
-        position: relative;
-        
+        max-width: 100%; 
     }
 
     &__grid-item-wrapper{

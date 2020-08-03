@@ -1,3 +1,11 @@
+@media (min-width: 1060px){
+    .projects{
+        &__img-grid{
+            flex-wrap: nowrap;
+        }
+    }
+}
+
 @media (min-width: 900px){
     html{
         font-size: 20px;
