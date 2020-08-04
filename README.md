@@ -1,1 +1,1 @@
-# Personal-Portfolio-locak-repo
+# Personal portfolio of Milan Radinović
