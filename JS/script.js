@@ -43,8 +43,8 @@ timeline
     .from('.home__social', {y: '250%', opacity: 0, ease: 'power4'}, 0);
 
 gsap.registerPlugin(ScrollTrigger);
-gsap.from(firstPara, {scrollTrigger: {trigger: firstPara, toggleActions: 'restart none none none', start: 'top 90%'}, y: '150%', opacity: 0, ease: 'power4', duration: 1});
-gsap.from('.services__skill', {scrollTrigger: {trigger: '.services__skill', toggleActions: 'restart none none none', start: 'top 80%'}, y: '100%', opacity: 0, ease: 'power4', duration: 1, stagger: .05});
+gsap.from(firstPara, {scrollTrigger: {trigger: firstPara, toggleActions: 'restart reverse restart reverse', start: 'top 70%', end: 'top 10%'}, y: '30%', opacity: 0, ease: 'power4', duration: 1});
+gsap.from('.services__skill', {scrollTrigger: {trigger: '.services__skill', toggleActions: 'restart reverse restart reverse', start: 'top 80%', end: 'top 10%'}, y: '30%', opacity: 0, ease: 'power4', duration: 1, stagger: .05});
 
 // gsap.from(para[0], {scrollTrigger: {trigger: para[0], toggleActions: 'restart none none none'}, y: '150%', opacity: 0, ease: 'power4', duration: 1});
 // gsap.from(para[1], {scrollTrigger: {trigger: para[1], toggleActions: 'restart none none none'}, y: '150%', opacity: 0, ease: 'power4', duration: 1, delay: 1});
