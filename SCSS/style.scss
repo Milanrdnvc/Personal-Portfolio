@@ -249,6 +249,15 @@ nav{
         flex-direction: column;
         justify-content: center;
     }
+
+    .grid-btn-toggle{
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .grid-item-wrapper-toggle::before{
+        opacity: 1;
+    }
 }
 
 .contact{
@@ -357,7 +366,7 @@ nav{
     font-size: var(--font-xsmall);
     border: 2px solid var(--color-theme);
     display: inline-block;
-    padding: 10px 20px 10px 20px;
+    padding: .2rem .4rem;
 
     &:hover{
         background-color: var(--color-theme);
