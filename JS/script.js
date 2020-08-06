@@ -5,11 +5,16 @@ const homeText = document.querySelectorAll('.home__text');
 const firstPara = document.querySelector('.para');
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('nav');
+const homeTextWord = document.querySelector('.home-text-word');
+
+setInterval(() => {
+    homeTextWord.classList.toggle('home-text-word-animate');
+}, 500)
 
 $('nav').localScroll();
 
 burger.addEventListener('click', () => {
-    nav.classList.toggle('translate-zero');
+    nav.classList.toggle('translate-nav');
     nav.style.transition = 'all .5s ease';
 });
 

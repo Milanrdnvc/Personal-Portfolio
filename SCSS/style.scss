@@ -399,10 +399,20 @@ nav{
     text-align: start;
 }
 
+.home-text-word{
+    display: inline-block;
+    transition: text-shadow .3s ease, transform .3s ease;
+}
+
 // Animations
 
-.translate-zero{
+.translate-nav{
     top: 80px;
+}
+
+.home-text-word-animate{
+    text-shadow: 0 0 20px #ff005b;
+    transform: scale(1.1);
 }
 
 @import 'style-media';
