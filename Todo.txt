@@ -1,4 +1,2 @@
-- Navbar burger za telefone u JS
-- Smooth scroll
 - Animacija za pocetni text
 - See more button za projekte?

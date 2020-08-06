@@ -6,6 +6,8 @@ const firstPara = document.querySelector('.para');
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('nav');
 
+$('nav').localScroll();
+
 burger.addEventListener('click', () => {
     nav.classList.toggle('translate-zero');
     nav.style.transition = 'all .5s ease';
@@ -35,24 +37,27 @@ gridItemWrapper.forEach((item, index) => {
     });
 });
 
-const events = ['scroll', 'load'];
+
+const events = ['scroll', 'load', 'resize'];
+header.style.transition = 'background-color 0.3s ease';
+nav.style.transition = 'background-color 0.3s ease';
 for(let event of events){
     window.addEventListener(event, () => {
-        // this.scrollY > 50? header.style.backgroundColor = 'rgba(0, 0, 0, .5)' : header.style.backgroundColor = 'transparent';
         if(this.scrollY > 50){
             header.style.backgroundColor = 'rgba(0, 0, 0, .5)';
-            if(window.clientWidth < 900){
-                console.log('hello')
+            if(window.innerWidth < 900){
+                nav.style.backgroundColor = 'rgba(0, 0, 0, .5)';
+               
+            } else{
+                nav.style.backgroundColor = 'transparent';
             }
-            nav.style.backgroundColor = 'rgba(0, 0, 0, .5)';
         } else{
             header.style.backgroundColor = 'transparent';
             nav.style.backgroundColor = 'transparent';
         }
-        header.style.transition = 'background-color 0.3s ease';
-        nav.style.transition = 'background-color 0.3s ease';
     });
 }
+
 
 const timeline = gsap.timeline({defaults: {duration: 1}});
 timeline
