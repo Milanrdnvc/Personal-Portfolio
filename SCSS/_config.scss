@@ -14,12 +14,18 @@
 }
 
 :root{
-    --font-xsmall: 1rem;
+    --font-xsmall: .8rem;
     --font-small: 1.2rem;
-    --font-medium: 1.5rem;
-    --font-large: 1.8rem;
+    --font-medium: 1.3rem;
+    --font-large: 1.6rem;
     --font-xbold: font-xbold;
     --font-bold: font-bold, sans-serif;
     --font-semibold: font-semibold, sans-serif;
     --color-theme: #00B1B1;
+}
+
+@media (min-width: 900px){
+    html{
+        font-size: 20px;
+    }
 }

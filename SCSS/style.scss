@@ -26,13 +26,21 @@ header{
 }
 
 nav{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -200%;
 
     a{
         position: relative;
         text-decoration: none;
         color: white;
-        padding: 0 10px;
+        padding: 0 20px;
+        margin: 4px 0;
+        display: inline-block;
         font-size: var(--font-xsmall);
         font-family: var(--font-bold);
 
@@ -48,16 +56,12 @@ nav{
             transform: scaleX(0);
             transform-origin: left;
         }
-
-        &:hover::after{
-            transform: scaleX(1);
-
-        }
     }
 
 }
 
 #logo{
+    cursor: pointer;
     margin: 0;
     color: white;
     font-family: var(--font-xbold);
@@ -66,13 +70,14 @@ nav{
 
 .burger{
     cursor: pointer;
+    z-index: 10;
 }
 
 .bline{
-    width: 20px;
+    width: 30px;
     height: 2px;
     background-color: white;
-    margin: 3px;
+    margin: 5px;
 }
 
 .bg-video{
@@ -299,9 +304,10 @@ nav{
     }
 
     &__email-address{
-        font-size: var(--font-small);
+        font-size: var(--font-medium);
         font-family: var(--font-semibold);
         margin: 0 0 0 10px;
+        word-break: break-all;
     }
 }
 
@@ -391,6 +397,12 @@ nav{
 
 .para--left{
     text-align: start;
+}
+
+// Animations
+
+.translate-zero{
+    top: 80px;
 }
 
 @import 'style-media';

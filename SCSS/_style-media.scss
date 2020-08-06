@@ -7,12 +7,19 @@
 }
 
 @media (min-width: 900px){
-    html{
-        font-size: 20px;
-    }
-
     nav{
         display: block;
+        position: static;
+
+        a{
+            padding: 0 10px;
+
+            &:hover::after{
+                transform: scaleX(1);
+    
+            }
+        }
+        
     }
 
     .burger{
