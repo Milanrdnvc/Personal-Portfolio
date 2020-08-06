@@ -11,7 +11,7 @@ setInterval(() => {
     homeTextWord.classList.toggle('home-text-word-animate');
 }, 500)
 
-$('nav').localScroll();
+$('nav, .home__button').localScroll();
 
 burger.addEventListener('click', () => {
     nav.classList.toggle('translate-nav');
